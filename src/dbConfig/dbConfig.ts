@@ -9,6 +9,7 @@ export async function connect() {
         })
         connection.on('error',(err)=>{
             console.log(`Something went wrong`+ err);
+            process.exit();
         })
     } catch (error) {
         console.log(`Something went wrong`)
